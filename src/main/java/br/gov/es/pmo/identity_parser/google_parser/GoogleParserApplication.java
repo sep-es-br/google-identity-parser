@@ -1,4 +1,4 @@
-package br.gov.es.pmo.identity.parser.google_parser;
+package br.gov.es.pmo.identity_parser.google_parser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

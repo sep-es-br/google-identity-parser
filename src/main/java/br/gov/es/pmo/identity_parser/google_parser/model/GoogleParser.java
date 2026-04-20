@@ -2,15 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.gov.es.pmo.identity.parser.google_parser.model;
+package br.gov.es.pmo.identity_parser.google_parser.model;
 
-import br.gov.es.pmo.identity.parser.pmo_base.model.IIdentityParser;
+import br.gov.es.pmo.identity_parser.pmo_base.model.IIdentityParser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author gean.carneiro
  */
+@Component("idsvr")
 public class GoogleParser implements IIdentityParser<String>{
 
     private final String SUB = "sub";
