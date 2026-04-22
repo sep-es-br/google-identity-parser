@@ -20,17 +20,17 @@ public class GoogleParser implements IIdentityParser<String>{
     private final String EMAIL = "email";
     
     @Override
-    public String getId(OAuth2User user, String token) {
+    public String getId(OAuth2User user, String accessToken, String clientToken) {
         return (String) user.getAttribute(SUB);
     }
 
     @Override
-    public String getNome(OAuth2User user, String token) {
+    public String getNome(OAuth2User user, String accessToken, String clientToken) {
         return (String) user.getAttribute(NOME);
     }
 
     @Override
-    public String getEmail(OAuth2User user, String token) {
+    public String getEmail(OAuth2User user, String accessToken, String clientToken) {
         return (String) user.getAttribute(EMAIL);
     }
     
